@@ -1,0 +1,51 @@
+
+
+h1{
+    font-family: "creepster";
+    font-size: 4rem;
+    padding: 60px;
+    margin-left: 340px;
+    color:#FFA500;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7) ;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadenIn {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+    
+}
+
+#selecao {
+    font-family: "creepster";
+    margin-left: 20%;
+    background-color: rgba(204 204 204 / 0.5);
+    width: 350px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column; /* Para empilhar os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    padding: 10px; /* Adiciona um pouco de espaçamento interno */
+    border-radius: 40px; /* Para bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+#selecao h3 {
+    margin: 20px 0; /* Ajusta o espaçamento em cima e embaixo */
+    text-align: center; /* Centraliza o texto */
+}
+
+#selecao button, a {
+    list-style: none;
+    text-decoration: none;
+    font-family: "creepster";
+    padding: 10px 20px; /* Adiciona padding ao botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    transition: background 0.3s; /* Animação para transição de cor */
+}
+
