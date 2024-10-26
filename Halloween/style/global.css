@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "creepster";
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../fotos/pexels-hankenstock-14252772.jpg');
+    background-size: cover;      /* Faz a imagem cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita duplicação da imagem */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+  }
+  

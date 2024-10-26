@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créditos - Tema Halloween</title>
+
+    <!-- Importando a fonte Creepster do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
+    <style>
+        /* Estilos gerais da página */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Creepster', cursive;
+            background-color: #1c1c1c;
+            color: #ff7518;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        /* Estilos do cabeçalho */
+        #cabecalho {
+            background-color: rgba(204, 204, 204, 0.5);
+            max-width: 100%;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 10; /* Garante que o cabeçalho fique acima do conteúdo */
+        }
+
+        .cabecalho_list {
+            display: flex;
+            justify-content: center;
+            justify-content: space-around;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 10;
+            padding: 1%;
+        }
+
+        .cabecalho_list a {
+            color: rgb(3, 3, 29);
+            text-decoration: none;
+            list-style: none;
+        }
+
+        /* Estilos do contêiner de créditos */
+        .creditos-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 117, 24, 0.7);
+            width: 80%;
+            max-width: 500px;
+            margin-top: 80px; /* Espaçamento para evitar sobreposição com o cabeçalho */
+        }
+
+        /* Estilizando o título */
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #000;
+        }
+
+        /* Estilizando os textos de crédito */
+        .creditos {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: bold;
+            text-shadow: 2px 2px #000;
+        }
+
+        /* Links de créditos */
+        .creditos a {
+            color: #ff7518;
+            text-decoration: none;
+            border-bottom: 1px solid #ff7518; /* linha abaixo do texto */
+            transition: all 0.3s ease;
+        }
+
+        .creditos a:hover {
+            color: #ff4500;
+            border-bottom: 1px solid #ff4500; /* muda a cor da linha ao passar o mouse */
+        }
+
+        /* Estilos do rodapé */
+        footer {
+            background-color: #333;
+            color: #aaa;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header id="cabecalho">
+        <nav>
+            <ol class="cabecalho_list">
+                <p><a href="sobre.html">Sobre</a></p>
+                <p><a href="footer.html">Contato</a></p>
+                <p><a href="../index.html">Créditos</a></p>
+            </ol>
+        </nav>
+    </header>
+
+    <div class="creditos-container">
+        <h1>Créditos</h1>
+        <p class="creditos">Criado por <a href="https://seuportfolio.com" target="_blank">Pedro</a></p>
+        <p class="creditos">Design e Desenvolvimento: <a href="https://seuportfolio.com" target="_blank">Pedro</a></p>
+        <p class="creditos">Conteúdo © 2024 - Todos os direitos reservados</p>
+        <p class="creditos">Licença: <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Pedro - Todos os direitos reservados. Feito com amor no tema de Halloween!</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Lenda de Jack-o'-lantern</title>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Creepster', cursive;
+            background-color: #222;
+            color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        #cabecalho {
+            background-color: rgba(204, 204, 204, 0.5);
+            max-width: 100%;
+            width: 100%;
+            padding: 20px;
+            border-bottom: 2px solid orange;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .cabecalho_list {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin: 10px 0;
+            padding: 1%;
+        }
+        .cabecalho_list a { 
+            color: rgb(3, 3, 29);
+            text-decoration: none;
+            list-style: none;
+            position: relative;
+            padding: 10px;
+        }
+        .cabecalho_list a::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: orange;
+            transition: width .3s;
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            border-radius: 5px;
+        }
+        .cabecalho_list a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+        .content {
+            padding: 20px;
+            text-align: justify;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: orange;
+        }
+        h2 {
+            color: orange;
+            border-bottom: 2px dashed orange;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<header id="cabecalho">
+    <nav>
+        <ol class="cabecalho_list">
+            <p><a href="sobre.html">Sobre</a></p>
+            <p><a href="footer.html">Contato</a></p>
+            <p><a href="creditos.html">Créditos</a></p>
+        </ol>
+    </nav>
+</header>
+
+<div class="content">
+    <h1>A Lenda de Jack-o'-lantern</h1>
+
+    <h2>Origem</h2>
+    <p>A lenda é originária da Irlanda e remonta a tempos antigos, quando os irlandeses comemoravam o Samhain, uma festa que marcava o fim do verão e o início do inverno. Durante essa época, acreditava-se que os espíritos dos mortos retornavam à Terra.</p>
+
+    <h2>Jack, o Ferreiro</h2>
+    <p>Jack era conhecido como um ferreiro astuto, mas também um beato e trapaceiro. Ele vivia uma vida repleta de travessuras e enganos, sempre tentando se sair bem em suas artimanhas.</p>
+
+    <h2>O Encontro com o Diabo</h2>
+    <p>Um dia, Jack se encontrou com o diabo em um bar. O diabo veio para levar sua alma, mas Jack, sendo astuto, conseguiu enganá-lo. Ele propôs um jogo de truques e, quando o diabo aceitou, Jack pediu que o diabo subisse em uma árvore para pegar uma maçã. Enquanto o diabo estava lá em cima, Jack esculpiu uma cruz na base da árvore, aprisionando-o.</p>
+
+    <h2>A Negociação</h2>
+    <p>Depois de várias tentativas de negociar sua liberdade, Jack finalmente deixou o diabo ir sob a condição de que ele não reclamaria sua alma por dez anos.</p>
+
+    <h2>A Morte de Jack</h2>
+    <p>Anos depois, Jack morreu. Ao chegar ao céu, ele foi rejeitado devido ao seu comportamento enganador. Em seguida, foi ao inferno, mas o diabo também se recusou a recebê-lo, lembrando-se de como Jack o havia enganado.</p>
+
+    <h2>A Lâmpada de Jack</h2>
+    <p>Sem lugar para ir, Jack vagou pela Terra, sendo condenado a perambular eternamente. Para iluminar seu caminho na escuridão, ele esculpiu um nabo, colocando uma vela dentro dele. Com isso, se tornou conhecido como "Jack, o Lanterninha".</p>
+
+    <h2>A Tradição da Abóbora</h2>
+    <p>Com o tempo, a tradição de Jack se espalhou, e os imigrantes irlandeses trouxeram a história para os Estados Unidos. Eles começaram a usar abóboras em vez de nabos, pois eram mais abundantes e mais fáceis de esculpir. Assim, a prática de esculpir abóboras e colocá-las nas janelas ou nas portas para afastar os espíritos malignos tornou-se uma tradição popular durante o Halloween.</p>
+
+    <h2>Simbolismo</h2>
+    <p>A história de Jack-o'-lantern é um reflexo das crenças sobre o sobrenatural e a vida após a morte, simbolizando a luta entre o bem e o mal. As lanternas de abóbora hoje em dia representam não apenas a proteção contra os espíritos, mas também a celebração da vida e da memória dos que partiram.</p>
+</div>
+
+</body>
+</html>
