@@ -16,13 +16,14 @@
         #cabecalho {
             background-color: rgba(204, 204, 204, 0.5);
             max-width: 100%;
-            width: 100%;
-            padding: 20px;
+            padding: 10px 20px;
             border-bottom: 2px solid orange;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
         .cabecalho_list {
+            list-style-type: none;
             display: flex;
+            
             text-align: center;
             justify-content: space-around;
             font-size: 1.5rem;
@@ -62,11 +63,36 @@
         h1 {
             text-align: center;
             color: orange;
+            font-size: 2.5rem; /* Aumenta o tamanho do título */
         }
         h2 {
             color: orange;
             border-bottom: 2px dashed orange;
             padding-bottom: 5px;
+            font-size: 1.8rem; /* Aumenta o tamanho dos subtítulos */
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .cabecalho_list {
+                flex-direction: column; /* Altera a direção para coluna em telas menores */
+                font-size: 1.2rem; /* Diminui o tamanho da fonte */
+            }
+            h1 {
+                font-size: 2rem; /* Diminui o tamanho do título */
+            }
+            h2 {
+                font-size: 1.5rem; /* Diminui o tamanho dos subtítulos */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem; /* Diminui ainda mais o tamanho do título */
+            }
+            h2 {
+                font-size: 1.3rem; /* Diminui ainda mais o tamanho dos subtítulos */
+            }
         }
     </style>
 </head>
@@ -75,9 +101,9 @@
 <header id="cabecalho">
     <nav>
         <ol class="cabecalho_list">
-            <p><a href="sobre.html">Sobre</a></p>
-            <p><a href="footer.html">Contato</a></p>
-            <p><a href="creditos.html">Créditos</a></p>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="footer.html">Contato</a></li>
+            <li><a href="creditos.html">Créditos</a></li>
         </ol>
     </nav>
 </header>

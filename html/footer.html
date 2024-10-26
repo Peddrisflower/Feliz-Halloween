@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halloween Page</title>
     <style>
-       
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
 
         /* Estilos Gerais */
         body {
-            font-family: "creepster", sans-serif;
+            font-family: "Creepster", sans-serif;
             margin: 0;
             padding: 0;
             background-color: #1a1a1a; /* Fundo escuro */
+            color: #f8f8f8; /* Cor do texto padrão */
         }
 
         /* Estilo do Header */
@@ -22,22 +21,27 @@
             background-color: rgba(204, 204, 204, 0.5);
             width: 100%;
             padding: 1% 0;
+            position: sticky; /* Fixa o cabeçalho no topo */
+            top: 0;
+            z-index: 10; /* Garante que o cabeçalho fique acima do conteúdo */
         }
         
         .cabecalho_list {
             display: flex;
             justify-content: space-around;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-weight: 500;
             margin: 0;
             padding: 0;
             list-style: none;
+            flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
         }
         
         .cabecalho_list a {
             color: rgb(3, 3, 29);
             text-decoration: none;
             transition: color 0.3s;
+            padding: 10px; /* Adiciona espaço em torno dos links */
         }
         
         .cabecalho_list a:hover {
@@ -55,7 +59,7 @@
         }
 
         footer h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #ff7518;
             margin-bottom: 15px;
         }
@@ -80,6 +84,7 @@
         .social-icons {
             margin-top: 15px;
         }
+        
         .social-icons a {
             display: inline-block;
             margin: 0 10px;
@@ -87,6 +92,7 @@
             font-size: 24px;
             transition: transform 0.3s;
         }
+        
         .social-icons a:hover {
             transform: scale(1.1);
         }
@@ -101,13 +107,38 @@
 
         .bat1 { top: 10%; left: 5%; animation-delay: 0s; }
         .bat2 { top: 20%; left: 85%; animation-delay: 1s; }
-        .bat3 { top: 50%; left: 50%; animation-delay: 2s; }
 
         /* Animação */
         @keyframes fly {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-20px) translateX(10px); }
             100% { transform: translateY(0px); }
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .cabecalho_list {
+                flex-direction: column; /* Empilha os itens em telas menores */
+                align-items: center; /* Centraliza os itens */
+            }
+
+            footer h2 {
+                font-size: 1.2rem; /* Reduz o tamanho da fonte do título do rodapé */
+            }
+
+            footer p {
+                font-size: 0.9rem; /* Reduz o tamanho da fonte do texto do rodapé */
+            }
+
+            .social-icons a {
+                font-size: 20px; /* Reduz o tamanho das redes sociais */
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cabecalho_list {
+                font-size: 1rem; /* Ajusta o tamanho da fonte para telas muito pequenas */
+            }
         }
     </style>
 </head>
@@ -117,14 +148,14 @@
 <header id="cabecalho">
     <nav>
         <ol class="cabecalho_list">
-            <p><a href="sobre.html">Sobre</a></p>
-            <p><a href="../index.html">Contato</a></p>
-            <p><a href="creditos.html">Créditos</a></p>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="../index.html">Contato</a></li>
+            <li><a href="creditos.html">Créditos</a></li>
         </ol>
     </nav>
 </header>
 
-<!-- Conteúdo -->
+<!-- Conteúdo aqui, se necessário -->
 
 <!-- Footer Halloween -->
 <footer>

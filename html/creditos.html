@@ -20,14 +20,14 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh; /* Altera para min-height para ocupar toda a altura */
             text-align: center;
         }
 
         /* Estilos do cabeçalho */
         #cabecalho {
+            
             background-color: rgba(204, 204, 204, 0.5);
-            max-width: 100%;
             width: 100%;
             position: fixed;
             top: 0;
@@ -35,13 +35,13 @@
         }
 
         .cabecalho_list {
+            list-style-type: none;
             display: flex;
-            justify-content: center;
             justify-content: space-around;
-            font-size: 1.5rem;
+            font-size: 1.2rem; /* Ajusta o tamanho da fonte para responsividade */
             font-weight: 500;
-            margin: 10;
-            padding: 1%;
+            margin: 0; /* Remove margem para melhor alinhamento */
+            padding: 10px 0; /* Adiciona espaçamento vertical */
         }
 
         .cabecalho_list a {
@@ -56,7 +56,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 20px rgba(255, 117, 24, 0.7);
-            width: 80%;
+            width: 80%; /* Mantém a largura responsiva */
             max-width: 500px;
             margin-top: 80px; /* Espaçamento para evitar sobreposição com o cabeçalho */
         }
@@ -100,6 +100,27 @@
             text-align: center;
             font-size: 0.8em;
         }
+
+        /* Media Queries para responsividade */
+        @media (max-width: 768px) {
+            .cabecalho_list {
+                flex-direction: column; /* Empilha os itens na vertical em telas pequenas */
+                font-size: 1rem; /* Reduz o tamanho da fonte */
+            }
+
+            .creditos-container {
+                width: 90%; /* Aumenta a largura em telas menores */
+                padding: 15px; /* Ajusta o padding */
+            }
+
+            h1 {
+                font-size: 2em; /* Ajusta o tamanho do título */
+            }
+
+            .creditos {
+                font-size: 1em; /* Ajusta o tamanho dos créditos */
+            }
+        }
     </style>
 </head>
 <body>
@@ -107,9 +128,9 @@
     <header id="cabecalho">
         <nav>
             <ol class="cabecalho_list">
-                <p><a href="sobre.html">Sobre</a></p>
-                <p><a href="footer.html">Contato</a></p>
-                <p><a href="../index.html">Créditos</a></p>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="footer.html">Contato</a></li>
+                <li><a href="../index.html">Créditos</a></li>
             </ol>
         </nav>
     </header>

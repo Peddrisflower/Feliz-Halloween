@@ -12,29 +12,63 @@
             color: #f8f8f8;
             margin: 0;
             padding: 0;
+            box-sizing: border-box; /* Adicionado para incluir padding e border no tamanho total */
+        }
+        *, *::before, *::after {
+            box-sizing: inherit; /* Aplica box-sizing em todos os elementos */
         }
         #cabecalho {
             background-color: rgba(204, 204, 204, 0.5);
-            max-width: 100%;
             width: 100%;
         }
         .cabecalho_list {
             display: flex;
-            text-align: center;
+            flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
             justify-content: space-around;
             font-size: 1.5rem;
             font-weight: 500;
             margin: 10px 0;
             padding: 1%;
+            list-style-type: none; /* Remove os marcadores padrão da lista */
         }
         .cabecalho_list a { 
             color: rgb(3, 3, 29);
             text-decoration: none;
-            list-style: none;
+            padding: 10px 15px; /* Adicionado padding para melhorar a área clicável */
+            transition: color 0.3s; /* Transição suave para hover */
+        }
+        .cabecalho_list a:hover {
+            color: orange; /* Muda a cor ao passar o mouse */
         }
         .content {
             padding: 20px;
             text-align: center;
+            max-width: 800px; /* Limita a largura do conteúdo */
+            margin: 0 auto; /* Centraliza o conteúdo */
+        }
+        h1 {
+            font-size: 2.5rem; /* Tamanho de fonte maior para cabeçalhos */
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.2rem; /* Tamanho de fonte responsivo para parágrafos */
+            line-height: 1.5; /* Aumenta o espaçamento entre linhas */
+            margin: 15px 0; /* Margens entre parágrafos */
+        }
+        @media (max-width: 600px) {
+            .cabecalho_list {
+                flex-direction: column; /* Altera a direção dos itens em telas pequenas */
+                align-items: center; /* Centraliza os itens */
+            }
+            .cabecalho_list a {
+                font-size: 1.2rem; /* Reduz o tamanho da fonte dos links */
+            }
+            h1 {
+                font-size: 2rem; /* Reduz o tamanho do cabeçalho em telas menores */
+            }
+            p {
+                font-size: 1rem; /* Reduz o tamanho da fonte dos parágrafos */
+            }
         }
     </style>
 </head>
@@ -43,9 +77,9 @@
 <header id="cabecalho">
     <nav>
         <ol class="cabecalho_list">
-            <p><a href="../index.html">Sobre</a></p>
-            <p><a href="footer.html">Contato</a></p>
-            <p><a href="creditos.html">Créditos</a></p>
+            <li><a href="../index.html">Sobre</a></li>
+            <li><a href="footer.html">Contato</a></li>
+            <li><a href="creditos.html">Créditos</a></li>
         </ol>
     </nav>
 </header>
